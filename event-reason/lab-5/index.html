@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <input type="text" name="nickname">
+        <input type="text" name="job">
+        <!-- <button id="check">check</button> -->
+
+        <script>
+
+            const nickname = document.getElementsByName('nickname')[0];
+            const job = document.getElementsByName('job')[0];
+            // const check = document.getElementById('check')
+            // check.addEventListener('click',console.log(nickname))
+            console.log(nickname)
+            
+            nickname.addEventListener('click',first)
+            job.addEventListener('click',myJob)
+
+            // console.log(nickname)
+            
+            
+
+            function first(event){
+                console.log(event.target.value)
+
+            }
+
+            function myJob(){
+                console.log(job)
+                
+            }
+
+            
+            
+            
+
+
+        </script>
+
+
+
+
+</body>
+</html>

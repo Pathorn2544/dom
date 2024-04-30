@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="change">hide</button>
+    <p id="text">Lorem ipsum dolor, sit</p>
+
+    <script>
+
+        const change = document.getElementById('change')
+        const text = document.getElementById('text')
+
+        change.addEventListener('click',process)
+
+        function process(){
+
+            if( change.textContent==='hide'){
+                text.style.display = 'none' // use to hide something
+                change.textContent = 'show'
+
+            }
+            else if(change.textContent==='show'){
+                text.style.display = 'block' // use to show the somethin
+                change.textContent = 'hide' // use to change text
+            }
+
+        }
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>

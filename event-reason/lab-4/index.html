@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a id="web" href="https://www.google.com/">Go to google.com</a>
+
+    <script>
+
+        function check(them){
+            if (confirm()) {
+                return
+            }
+            else {
+                them.preventDefault()
+            }
+        }
+
+
+        const link = document.querySelector('a')
+        link.addEventListener('click', check)
+
+        
+
+
+
+        // if (confirm()) {
+        //     return
+        // }
+        // else {
+        //     them.preventDefault()
+        // }
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

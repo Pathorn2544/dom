@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul class="aaa">
+        
+    </ul>
+
+    <script>
+
+        const ttt = document.getElementsByClassName("aaa")[0]
+        console.log(ttt)
+        let arr = prompt('Enter your word')
+        while(arr !== null || arr.trim() !== ''){
+                const li = document.createElement('li')// <li></li>
+                li.innerHTML =arr
+                ttt.append(li)
+                console.log(ttt)
+                arr = prompt('Enter your word')
+            }
+           
+            
+        
+        
+    </script>
+    
+</body>
+</html>
+

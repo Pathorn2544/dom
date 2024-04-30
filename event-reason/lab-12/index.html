@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+  
+</style>
+<body>
+
+
+    <button id="add">add</button>
+    
+    
+
+    <script>
+        const add = document.getElementById('add')
+        
+
+        add.addEventListener('click',gain)
+
+        function gain(){ //funtion for create text edit button delete button by click add
+            const p = document.createElement('text')// Text
+            document.body.appendChild(p)
+            const word = document.querySelector('p')
+            p.textContent = 'Task'
+            //-------------------------------------------------------
+            const edit = document.createElement('button') // Edit button
+            document.body.appendChild(edit)
+            const change = document.querySelector('edit')
+            edit.textContent = 'Edit'
+            edit.addEventListener('click',rewrite)
+            //-----------------------------------------------------
+            function rewrite(){ // funtion to create input by click edit
+                const input = document.createElement('input')
+                document.body.appendChild(input)
+                const boc = document.querySelector('input')
+                input.addEventListener('click',want)
+            //-----------------------------------------------------
+            function want(){ // change words in text
+                p.textContent = input.value
+            }
+        }
+
+            const del = document.createElement('button')// delete button
+            document.body.appendChild(del)
+            const blank = document.querySelector('del')
+            del.textContent = 'Delete'
+            del.addEventListener('click',disappear)
+            
+
+            function disappear(){ 
+                del.remove() // make delete disaapear
+                edit.remove() // make edit disappear
+                p.remove() // make text disappear
+                const input = document.querySelector('input');
+                input.remove();
+                
+                
+            }
+        }
+       
+
+    </script>
+    
+</body>
+</html> 
+

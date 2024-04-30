@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="https://www.google.com/">
+        <button id="Submit">Submit Form</button>
+    </form>
+
+
+    <script>
+
+        const button = document.querySelector("#Submit")
+        function start(event) {
+            event.preventDefault()
+            //alert("Form is Summit")
+            //event.preventDefault()
+            //button.removeEventListener('click',start)
+        }
+
+        // function not(){
+        //     button.removeEventListener()
+        // }
+        button.addEventListener('click', button)
+        // button.onclick = () => start;
+        //button.removeEventListener("click", start);
+        //button.onclick = not;
+        button.addEventListener("click", start);
+
+
+    </script>
+
+
+
+</body>
+
+</html>

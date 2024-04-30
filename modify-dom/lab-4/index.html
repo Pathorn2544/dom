@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn">Submit</button>
+    <script>
+        const write = prompt('enter your color')
+        const button = document.querySelector('.btn')
+        //let a = 3000
+        function change(color,choose){
+            let a = 3000
+            color.style.backgroundColor=null
+             setTimeout(() => {
+                 color.style.backgroundColor= choose
+             }, a);
+            
+            setTimeout(() => {
+                 color.style.backgroundColor=null
+             }, a*=2);
+        }
+
+        change(button,write)
+
+    </script>
+
+</body>
+</html>
+
